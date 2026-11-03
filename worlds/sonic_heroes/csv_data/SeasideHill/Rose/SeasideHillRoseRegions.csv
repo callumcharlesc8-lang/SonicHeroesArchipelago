@@ -1,8 +1,145 @@
-Team,Level,Name,ObjChecks
-Rose,Seaside Hill,Start,0
-Rose,Seaside Hill,ObjSanity,0
-Rose,Seaside Hill,Bonus Key 1,0
-Rose,Seaside Hill,Bonus Key 2,0
-Rose,Seaside Hill,Checkpoint 1,0
-Rose,Seaside Hill,Checkpoint 2,0
-Rose,Seaside Hill,Goal,0
+Team,Level,Name,ObjChecks,Rings,Rings Cont.,Enemies,Enemies Cont.,Items,Items Cont.,Other Stuff,Notes
+Rose,Seaside Hill,Start (First island),9,9,1x5 1x4,0,,0,0,,
+Rose,Seaside Hill,Start First Ruin Steps,4,4,2x2,0,,0,0,,These rings are on Small stone ruin platforms
+Rose,Seaside Hill,Start First Ruin Platforms,4,4,2x2,0,,,,HintRing,"Rings are on ‘RuinsNoTrigger’. However, with some height, they can be collected risk-free."
+Rose,Seaside Hill,Start First Rising Ruins,9,9,1x9,0,,0,0,,These rings are on ‘RuinsTrigger’ and cannot be collected risk free without it.
+Rose,Seaside Hill,Start Second Rising Ruins,9,9,1x9,,,,,,These rings are on ‘RuinsTrigger’ and cannot be collected risk free without it.
+Rose,Seaside Hill,Start First Island Pillar Tops,0,0,0,0,,0,0,,Not intended to be reached by OG Devs
+Rose,Seaside Hill,Above Second Island After Start,10,0,0,2,red flapper,1,10 Ring balloon,,
+Rose,Seaside Hill,Second Island After Start,26,16,2x8,3,2xLance and 1xCannon,1,10 Ring box,HintRing,
+Rose,Seaside Hill,Bonus Key 1,0,0,0,0,0,0,0,,This cage is grounded and located in 'Second island after start'
+Rose,Seaside Hill,Second Island Ruin Platform Staircase After Start,9,9,3x3,0,0,0,,HintRing,These are on ‘MovingRuinPlatform’s above a pit
+Rose,Seaside Hill,Second Island Ruin Pillar Staircase After Start,15,0,0,0,0,4,3x5Rings Balloon and Fly LV Box,,These are on ‘MovingRuinPlatform’s above a pit
+Rose,Seaside Hill,Before Bobsled Area After Start,0,0,0,0,0,0,0,,
+Rose,Seaside Hill,Bobsled Area After Start,111,46,2x6 2x5 6x4,0,0,6,5Ring 4x10Rings 1x20 Rings Balloon,,
+Rose,Seaside Hill,Ruin After Bobsled Area After Start,0,0,0,0,0,1,Power Lvl Box,HintRing,These objects are on ‘RuinsNoTrigger’
+Rose,Seaside Hill,First Cliff Before Big Ruin Beach At Checkpoint 1,10,0,0,0,0,0,0,TripleSpring and HintRing,the Triplespring has 10 rings inside
+Rose,Seaside Hill,Second Cliff Before Big Ruin Beach After Checkpoint 1,6,6,2x3,1,GreenShot,0,0,HintRing,"These rings are in the air, you need Ring Dash, FlightStack, jump or Bellyflop to obtain them"
+Rose,Seaside Hill,Lower Cliff Before Big Ruin Beach After Checkpoint 1,20,20,1x20,0,0,1,1x20 Ring Box,,
+Rose,Seaside Hill,Path Before Big Ruin Beach Blocks After Checkpoint 1,9,9,3x3,0,0,0,0,,
+Rose,Seaside Hill,5 Ring Box Between Bocks Before Big Ruin Beach After Checkpoint 1,5,5,1x5,0,0,0,0,,
+Rose,Seaside Hill,Path After Blocks Before Big Ruin Beach After Checkpoint 1,10,0,0,3,2xLance 1xCannon,0,0,TripleSpring and HintRing,the Triplespring has 10 rings inside and needs BreakThings
+Rose,Seaside Hill,Big Ruin Beach Falling Ruin After Checkpoint 1,0,0,0,0,0,0,0,(Special Case HintRing),I’ve Turned the HintRing into its own location 2 rows below
+Rose,Seaside Hill,Big Ruin Beach Lower Ruin Platform After Checkpoint 1,9,9,3x3,2,2xNothing,,,HintRing,
+Rose,Seaside Hill,Big Ruin Beach Item Balloon Above Falling Ruins After Checkpoint 1,0,0,0,0,0,1,Barrier Balloon,,
+Rose,Seaside Hill,Big Ruin Beach Start Hint Ring After Checkpoint 1,0,0,0,0,0,0,0,This is the special case HintRing,It’s in the air without triggering the Falling ruin
+Rose,Seaside Hill,Big Ruin Beach Start Tall Ruins After Checkpoint 1,8,8,4x2,0,0,0,0,,The Rings here are on ‘RuinsNoTrigg er’. Even if the 
+Rose,Seaside Hill,Big Ruin Beach Start Lower Tall Ruin After Checkpoint 1,0,0,0,0,0,0,0,,Separated for difference in bellyflop chain difficulty compared to previous region
+Rose,Seaside Hill,Big Ruin Beach Start Tall Spearhead Ruin Platform,10,0,0,0,0,3,2x5Ring Box 1x1-Up Box,0,1-Up Is inside of a cage
+Rose,Seaside Hill,Big Ruin Beach Lower Cliffs At Start After Checkpoint 1,0,0,0,1,Lance Concrete Shield,0,0,,
+Rose,Seaside Hill,Big Ruin Beach Island 1 After Checkpoint 1,0,0,0,2,Cannon,0,0,,
+Rose,Seaside Hill,Big Ruin Beach Island 1 Ruins After Checkpoint 1,26,16,2x3 & 2x5,1,Red Flapper,0,0,TripleSpring,Triplespring needs Breakthings
+Rose,Seaside Hill,Big Ruin Beach Rising Ruin After Checkpoint 1,0,0,0,0,0,0,0,,
+Rose,Seaside Hill,Big Ruin Beach Island 2 After Checkpoint 1,9,9,1x9,3,2xLance 1xCannon,,,,
+Rose,Seaside Hill,Big Ruin Beach Island 2 Breakable Block Balloons,15,0,0,0,0,3,3x5Rings Balloon,,Breakthings Needed
+Rose,Seaside Hill,Big Ruin Beach Island 2’s Offshore Balloon,0,0,0,0,0,1,1-up Balloon,,"This Balloon is far offshore, you need ((Jump OR BellyFlopChain) AND ((Ruinplatforms AND Power cannon AND +1 team member) OR Thundershoot) to get it safely. Otherwise, ‘(Jump AND (Tornado Hover OR FlyAny OR SoloPowerCannon)’ can be used sacrificially. The user must be confident in their FlyDepleteBoost skills to make it back without access to thundershoot. "
+Rose,Seaside Hill,Big Ruin Beach Ruin Staircase Before Checkpoint 2,5,0,0,0,0,1,5Ring box,,The 5 ring box needs BreakThings
+Rose,Seaside Hill,Big Ruin Beach Spring Chain Before Checkpoint 2,6,6,2x3,0,0,0,0,0,The Ring on this path should be special-cased. Requiring at LEAST (Rings AND SingleSpring AND RuinsNoTrigger AND SpeedCannon AND Jump)
+Rose,Seaside Hill,Big Ruin Beach End Path Before Checkpoint 2,4,4,1x4,0,,0,0,,
+Rose,Seaside Hill,Big Ruin Beach Middle Path After Checkpoint 1,0,0,0,0,,0,0,,Not intended to be reached by OG Devs
+Rose,Seaside Hill,Big Ruin Beach Top Path After Checkpoint 1,0,0,0,0,,0,0,,Not intended to be reached by OG Devs
+Rose,Seaside Hill,Big Ruin Beach End Path Before Checkpoint 2 Item Balloon,10,0,0,0,,1,,,
+Rose,Seaside Hill,Checkpoint 2,6,6,1x6,0,0,0,,,
+Rose,Seaside Hill,Big Special Ruin Before Volcano After Checkpoint 2,0,0,,2,2xRed Flapper,1,Fly Lvl Balloon,,"This is all on ‘RuinsTrigger’, The really big special one with failsafe collision."
+Rose,Seaside Hill,Ruin After Big Special Ruin Before Volcano After Checkpoint 2,5,0,0,4,3xRed Flapper 1xGreenShot,0,,TripleSpring,There are 5 rings inside the TripleSpring
+Rose,Seaside Hill,Path After Big Special Ruin Before Volcano Start After Checkpoint 2,22,22,3x4 1x5,1,EggPawn,0,0,,
+Rose,Seaside Hill,Path After Big Special Ruin Before Volcano Loop After Checkpoint 2,15,5,1x5,0,0,3,10 Ring box 5 Ring Box Speed LV Box,,Might want to consider removing the dash panels
+Rose,Seaside Hill,Ruin Corridor Into Volcano Before Goal,30,30,2x8 2x7,0,,0,,,
+Rose,Seaside Hill,Steep Incline Path Before Goal,0,0,0,0,0,0,0,,
+Rose,Seaside Hill,Goal!,0,0,0,2,2 EggPawns,0,0,,
+Rose,Seaside Hill,5 Ring Item Box After Goal Ring,5,0,0,0,0,1,5Ring Box,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Dark,Seaside Hill,Top Cliff Route With Hermit Crab Before Checkpoint 1,0,0,,0,,0,,,
+Dark,Seaside Hill,Bottom Cliff Route Before Checkpoint 1,0,0,,0,,1,Fly Lvl Balloon,,
+Dark,Seaside Hill,Staircase Before Corner Cave Bottom At Checkpoint 1,2,0,,2,2xred flapper,0,,,
+Dark,Seaside Hill,Checkpoint 1,3,0,,3,2xred flapper GreenShot,0,,,
+Dark,Seaside Hill,Staircase Before Corner Cave Bottom At Checkpoint 1 Item Balloon,0,0,,0,,1,1 speed shoes,HintRing,balloon needs FlyAnyORJumpORFullFlyingStackwithTallChar (not knuckles)
+Dark,Seaside Hill,Staircase Before Corner Cave Middle After Checkpoint 1,0,34,1x7 1x10 1x1 1x4 2x6,0,,1,5Rings Box Middle Path Loop,,
+Dark,Seaside Hill,Staircase Before Corner Cave Top After Checkpoint 1,5,0,,5,3xbazooka 2xnothing,0,,HintRing,Hint needs ComboHeightORJumpORThundershoot0 (can be touched with flyingstack OOL)
+Dark,Seaside Hill,Ruin Before Corner Cave After Checkpoint 1,0,0,,0,,0,,,
+Dark,Seaside Hill,Corner Cave After Checkpoint 1,0,0,,0,,0,,,
+Dark,Seaside Hill,First Island After Checkpoint 1,0,0,,0,,0,,,
+Dark,Seaside Hill,First Island After Checkpoint 1 Cannon Speed,0,0,,0,,1,Fly Lvl Balloon,,balloon needs FlyAnyOR(JumpANDFullFlyingStackwithTallChar)ORCannonAND(JumpORThundershoot0)ANDFlyingChar (not knuckles)
+Dark,Seaside Hill,First Island After Checkpoint 1 Cannon Power,0,0,,0,,0,,,
+Dark,Seaside Hill,First Island After Checkpoint 1 Cannon Flying,0,0,,0,,3,2x5Rings Power Lvl Balloons,TripleSpring,balloons need BreakThingsOR(CannonAND(ComboHeightORJump)ANDPowerChar)
+Dark,Seaside Hill,First Island Top Pillar Right After Checkpoint 1,0,9,3x3,0,,0,,,
+Dark,Seaside Hill,First Island Top Pillar Left After Checkpoint 1,3,0,,3,2xred flapper GreenShot,0,,,red flappers low to ground
+Dark,Seaside Hill,First Ruin Between First and Second Island After Checkpoint 1,2,0,,2,bazooka lance,1,10Rings Balloon,,balloon needs FlyAnyORJumpORTripleSpring
+Dark,Seaside Hill,Second Ruin Between First and Second Island After Checkpoint 1,0,0,,0,,1,Fly Lvl Balloon,,
+Dark,Seaside Hill,Third Ruin Between First and Second Island After Checkpoint 1,1,0,,1,GreenShot,0,,,GreenShot over void but can be reached with jump
+Dark,Seaside Hill,Second Island After Checkpoint 1,1,0,,1,red flapper,0,,,
+Dark,Seaside Hill,Second Island After Checkpoint 1 High Item Balloon,1,0,,1,red flapper,0,,,red flapper on ground
+Dark,Seaside Hill,Ruin After Second Island After Checkpoint 1,0,0,,0,,0,,,
+Dark,Seaside Hill,Ruin Stairs After Second Island After Checkpoint 1,7,29,5 6x4,7,7xnothing,2,2x5Rings Balloons,,things need nothing
+Dark,Seaside Hill,Before First Bobsled After Checkpoint 1,0,0,,0,,0,,,
+Dark,Seaside Hill,First Bobsled After Checkpoint 1,0,0,,0,,0,,,
+Dark,Seaside Hill,First Bobsled After Block After Checkpoint 1,2,6,1x6,2,2xGreenShot,0,,,
+Dark,Seaside Hill,First Bobsled Small Island After Checkpoint 1,0,4,1x4,0,,0,,,Rings need (SingleSpringAND(FlyAnyORJumpORComboHeight))OR(FlyAnyANDJump)
+Dark,Seaside Hill,Ruin After First Bobsled After Checkpoint 1,0,0,,0,,0,,,
+Dark,Seaside Hill,Big Ruin After First Bobsled After Checkpoint 1,4,4,1x4,4,2xlance redflapper GreenShot,1,10 Rings box,,box needs BreakThings flappers need (FlyAnyANDThunderShoot0)OR(JumpANDTornado0HoverANDRuinsNoTrigger)OR(BreakThingsANDSingleSpringAND(ComboHeightORFlyAnyORJumpORThundershoot0)ANDRuinsNoTrigger)
+Dark,Seaside Hill,First Cliff Before Big Ruin Beach At Checkpoint 2,0,0,,0,,1,invinc box,SingleSpring,box needs BreakThings
+Dark,Seaside Hill,Checkpoint 2,8,8,1x3 1x5,8,6xlance 2xGreenShot,0,,,
+Dark,Seaside Hill,Second Cliff Before Big Ruin Beach After Checkpoint 2,0,0,,0,,0,,,
+Dark,Seaside Hill,Lower Cliff Before Big Ruin Beach After Checkpoint 2,0,0,,0,,0,,,
+Dark,Seaside Hill,Path Before Big Ruin Beach After Checkpoint 2,0,0,,0,,0,,,
+Dark,Seaside Hill,Path Before Big Ruin Beach After Checkpoint 2 Cannon Speed,0,0,,0,,0,,,
+Dark,Seaside Hill,Path Before Big Ruin Beach After Checkpoint 2 Cannon Power,0,0,,0,,2,2xPower Lvl Balloon,,balloons need BreakThingsOR(CannonANDJumpANDPowerChar)
+Dark,Seaside Hill,Path Before Big Ruin Beach After Checkpoint 2 Cannon Flying,1,0,,1,lance,0,,,
+Dark,Seaside Hill,Big Ruin Beach Lower Cliffs At Start After Checkpoint 2,0,0,,0,,0,,,
+Dark,Seaside Hill,Big Ruin Beach Ruin With Dash Ramp After Checkpoint 2,0,0,,0,,1,Extra Life Balloon,,
+Dark,Seaside Hill,Big Ruin Beach Island 1 After Checkpoint 2,0,0,,0,,1,Speed Lvl Balloon,,
+Dark,Seaside Hill,Bonus Key 2,0,0,,0,,0,,HintRing,
+Dark,Seaside Hill,Big Ruin Beach Island 1 After Checkpoint 2 High Item Balloon,0,0,,0,,0,,,
+Dark,Seaside Hill,Big Ruin Beach Island 1 After Checkpoint 2 Mid Item Balloon,0,0,,0,,0,,,
+Dark,Seaside Hill,Ruin Between Big Ruin Beach Islands After Checkpoint 2,0,0,,0,,0,,,
+Dark,Seaside Hill,Big Ruin Beach Middle Path Top Corner After Checkpoint 2,1,0,,1,bazooka ,0,,,
+Dark,Seaside Hill,Big Ruin Beach Middle Path Before Blocks After Checkpoint 2,8,0,,8,7xlance redflapper,0,,,flapper can be hit with auto attack
+Dark,Seaside Hill,Big Ruin Beach Middle Path After Blocks After Checkpoint 2,5,15,1x5 1x10,5,2xlanceCshield 2xbazooka nothing,0,,HintRing,nothing and Hint on platform
+Dark,Seaside Hill,Big Ruin Beach Top Path 1 After Checkpoint 2,0,0,,0,,0,,,
+Dark,Seaside Hill,Big Ruin Beach Top Path 2 After Checkpoint 2,3,4,1x4,3,redflapper 2xGreenShot,0,,,GreenShots higher (can homing off of flapper)
+Dark,Seaside Hill,Big Ruin Beach Island 2 Before Checkpoint 3,0,0,,0,,1,10Rings Balloon,,
+Dark,Seaside Hill,Big Ruin Beach Ruin Staircase Before Checkpoint 3,0,6,1x6,0,,0,,,
+Dark,Seaside Hill,Big Ruin Beach End Path Before Checkpoint 3,0,0,,0,,0,,,
+Dark,Seaside Hill,Big Ruin Beach End Path Before Checkpoint 3 Item Balloon,3,0,,3,2xflapper GreenShot,0,,,
+Dark,Seaside Hill,Path Before Volcano Start At Checkpoint 3,3,0,,3,2xflapper GreenShot,0,,,
+Dark,Seaside Hill,Checkpoint 3,2,0,,2,2xflapper,0,,,
+Dark,Seaside Hill,Big Special Ruin Before Volcano After Checkpoint 3,3,8,2x4,3,3xlance,3,3x5Rings Box,,
+Dark,Seaside Hill,Ruin After Big Special Ruin Before Volcano After Checkpoint 3,2,0,,2,2xlance,0,,,
+Dark,Seaside Hill,Path After Big Special Ruin Before Volcano Start After Checkpoint 3,2,0,,2,2xlance,0,,,
+Dark,Seaside Hill,Path After Big Special Ruin Before Volcano Loop After Checkpoint 3,1,0,,1,lance,0,,,
+Dark,Seaside Hill,Cave Before Volcano Entrance After Checkpoint 3,6,0,,6,6xlance,0,,,
+Dark,Seaside Hill,Cave Before Volcano After First Block After Checkpoint 3,0,0,,0,,0,,,
+Dark,Seaside Hill,Cave Before Volcano After Second Block After Checkpoint 3,0,0,,0,,0,,,
+Dark,Seaside Hill,Volcano Cannon Room After Checkpoint 3,0,0,,0,,0,,,
+Dark,Seaside Hill,Volcano Cannon Room Alcove After Checkpoint 3,0,0,,0,,0,,,
+Dark,Seaside Hill,Bonus Key 3,0,0,,0,,0,,,
+Dark,Seaside Hill,Volcano Cannon Room After Checkpoint 3 Cannon Speed,0,0,,0,,0,,,
+Dark,Seaside Hill,Volcano Cannon Room After Checkpoint 3 Cannon Power,0,0,,0,,0,,,
+Dark,Seaside Hill,Volcano Cannon Room After Checkpoint 3 Cannon Flying,0,0,,0,,0,,,
+Dark,Seaside Hill,Volcano Top Room After Checkpoint 3,6,22,1x4 2x5 1x8,6,6xnothing,6,4x5Ring 10Ring Speed Shoes (Balloons),,
+Dark,Seaside Hill,Second Bobsled Start At Checkpoint 4,0,15,1x15,0,,1,5Rings Box,,
+Dark,Seaside Hill,Checkpoint 4,1,0,,1,nothing,0,,,
+Dark,Seaside Hill,Second Bobsled After Checkpoint 4,5,45,1x11 1x12 22x1,5,5xlance,0,,,
+Dark,Seaside Hill,Loop After Second Bobsled After Checkpoint 4,0,0,,0,,0,,,
+Dark,Seaside Hill,Path Before Big Loop After Checkpoint 4,6,0,,6,3xflapper 2xGreenShot lance,0,,,
+Dark,Seaside Hill,Big Loop After Checkpoint 4,100,0,,0,,0,,,
+Dark,Seaside Hill,Whale Blowhole Before Goal,,,,,,,,,
+Dark,Seaside Hill,Whale Island Top At Goal,,,,,,,,,
+Dark,Seaside Hill,Goal,,,,,,,,,
