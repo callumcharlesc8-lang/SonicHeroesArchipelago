@@ -47,7 +47,7 @@ class StageObj(enum.StrEnum):
     GONG = "Gong"
     FAN = "Fan"
     CASE = "Case"
-    WARP_FLOWER = "Warpflower"
+    WARP_FLOWER = "WarpFlower"
     INVISIBLE_COLLISION_OBJECT = "Invisible Collision Object"
     TRIGGER_TALKING = "Trigger Talking"
     TRIGGER_LIGHT = "Trigger Light"
@@ -451,8 +451,9 @@ SEASIDE_HILL_DARK_STAGE_OBJS: list[StageObj] = \
     # StageObj.POLE,
     # StageObj.GONG,
     # StageObj.FAN,
-    # StageObj.WARP_FLOWER,
+    StageObj.WARP_FLOWER,
     StageObj.BONUS_KEY,
+    StageObj.HERMIT_CRAB,
     StageObj.MOVING_RUIN_PLATFORM,
     StageObj.TRIGGER_RUINS,
     StageObj.EGG_FLAPPER,

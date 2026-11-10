@@ -306,6 +306,47 @@ class HasAbilityForTeam(Rule[SonicHeroesWorldBase], game=SONIC_HEROES):
         return rule
 
 
+@dataclasses.dataclass(kw_only=True)
+class CanGetThingOnSmallPlatformWithPowerAttack(Rule[SonicHeroesWorldBase], game=SONIC_HEROES):
+    team: Team
+    stage: Stage
+    can_big_solo: bool
+    can_use_teammates: bool
+
+    @override
+    def _instantiate(self, world: SonicHeroesWorldBase) -> Rule.Resolved:
+        rule: Rule[SonicHeroesWorldBase] = False_[SonicHeroesWorldBase]()
+        if self.can_big_solo:
+            rule |= self._can_big_solo(world=world)
+        if self.can_use_teammates:
+            rule |= self._can_big_use_teammates(world=world) | self._can_vector_use_teammates(world=world)
+        return rule.resolve(world=world)
+
+
+    def _can_big_solo(self, world: SonicHeroesWorldBase) -> Rule[SonicHeroesWorldBase]:
+        team_characters: list[Character] = get_all_characters_for_team(world=world, team=self.team)
+        if Character.BIG not in team_characters:
+            return False_[SonicHeroesWorldBase]()
+        # team_characters.remove(Character.BIG)
+        return HasCharacter(character=Character.BIG) & HasAbilityForCharacter(character=Character.BIG, ability=Ability.POWER_ATTACK)
+
+
+    def _can_big_use_teammates(self, world: SonicHeroesWorldBase) -> Rule[SonicHeroesWorldBase]:
+        team_characters: list[Character] = get_all_characters_for_team(world=world, team=self.team)
+        if Character.BIG not in team_characters:
+            return False_[SonicHeroesWorldBase]()
+        team_characters.remove(Character.BIG)
+        return HasCharacter(character=Character.BIG) & HasAbilityForCharacter(character=Character.BIG, ability=Ability.POWER_ATTACK) & (HasCharacter(character=team_characters[0]) | HasCharacter(character=team_characters[1]))
+
+    def _can_vector_use_teammates(self, world: SonicHeroesWorldBase) -> Rule[SonicHeroesWorldBase]:
+        team_characters: list[Character] = get_all_characters_for_team(world=world, team=self.team)
+        if Character.VECTOR not in team_characters:
+            return False_[SonicHeroesWorldBase]()
+        team_characters.remove(Character.VECTOR)
+        return HasCharacter(character=Character.VECTOR) & HasAbilityForCharacter(character=Character.VECTOR, ability=Ability.POWER_ATTACK) & (HasCharacter(character=team_characters[0]) | HasCharacter(character=team_characters[1]))
+
+
+
 @dataclasses.dataclass(init=False, kw_only=True)
 class HasComboHeight(HasAbilityForTeam, game=SONIC_HEROES):
     """
@@ -495,6 +536,7 @@ class CanGoalStage(Rule[SonicHeroesWorldBase], game=SONIC_HEROES):
             return self._can_reach_goal_vanilla(world=world)
         if self.act is Act.ACT_B:
             return Has(item_name=get_obj_sanity_event_item_name(team=self.team, stage=self.stage, act=self.act), count=DARK_OBJ_SANITY_AMOUNT)
+        # TODO fix count for Dark ObjSanity
         raise ValueError(f"Incorrect Act provided for CanGoalStage: {self.team} for {self.stage.stage_name} Act: {self.act}")
 
     def _can_goal_rose_stage(self, world: SonicHeroesWorldBase) -> Rule[SonicHeroesWorldBase]:
@@ -508,7 +550,7 @@ class CanGoalStage(Rule[SonicHeroesWorldBase], game=SONIC_HEROES):
         # rule: Rule[SonicHeroesWorldBase] = False_[SonicHeroesWorldBase]()
         # TODO fix for stealth levels
         if self.stage.chaotix_obj_sanity_checks[self.act] > 0:
-            return Has(item_name=get_obj_sanity_event_item_name(team=self.team, stage=self.stage, act=self.act), count=self.stage.chaotix_obj_sanity_checks[Act.ACT_A])
+            return Has(item_name=get_obj_sanity_event_item_name(team=self.team, stage=self.stage, act=self.act), count=self.stage.chaotix_obj_sanity_checks[self.act])
         return self._can_reach_goal_vanilla(world=world)
 
     def _can_goal_super_hard_mode_stage(self, world: SonicHeroesWorldBase) -> Rule[SonicHeroesWorldBase]:
@@ -598,6 +640,7 @@ class TrickRule(Rule[SonicHeroesWorldBase], game=SONIC_HEROES):
 
 
         # TODO handle caching here
+
 
 
 

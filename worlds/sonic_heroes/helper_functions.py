@@ -37,7 +37,12 @@ def get_spawn_position_item_name(team: Team, stage: Stage, checkpoint: int) -> s
 
 def get_all_characters_for_team(world: SonicHeroesWorldBase, team: Team) -> list[Character]:
     """Gets all characters for the Team"""
-    return [Character.SHADOW, Character.ROUGE, Character.OMEGA]
+    match team:
+        case Team.DARK:
+            return [Character.SHADOW, Character.ROUGE, Character.OMEGA]
+        case Team.CHAOTIX:
+            return [Character.ESPIO, Character.CHARMY, Character.VECTOR]
+    return []
 
 
 def get_abilities_for_char(world: SonicHeroesWorldBase, character: Character) -> list[Ability]:
@@ -72,6 +77,8 @@ def get_default_true_rule() -> Rule[SonicHeroesWorldBase]:
 
 
 def get_obj_sanity_event_item_name(team: Team, stage: Stage, act: Act) -> str:
+    if team is Team.CHAOTIX and stage is not Stage.MYSTIC_MANSION:
+        return f"{team} {stage.stage_name} {OBJ_SANITY_EVENT_ITEM}"
     return f"{team} {stage.stage_name} {act.get_act_str()} {OBJ_SANITY_EVENT_ITEM}"
 
 
