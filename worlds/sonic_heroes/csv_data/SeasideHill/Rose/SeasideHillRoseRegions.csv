@@ -1,4 +1,5 @@
 Team,Level,Name,ObjChecks,Notes
+Rose,Seaside Hill,Start,0,
 Rose,Seaside Hill,ObjSanity,0,
 Rose,Seaside Hill,First Island At Start of Level,9,
 Rose,Seaside Hill,Start First Ruin Steps,4,These rings are on Small stone ruin platforms
@@ -17,6 +18,7 @@ Rose,Seaside Hill,Before Bobsled Area After Start,0,
 Rose,Seaside Hill,Bobsled Area After Start,111,
 Rose,Seaside Hill,Lower Ruin After Bobsled Area Before Checkpoint 1,0,
 Rose,Seaside Hill,Higher Ruin After Bobsled Area Before Checkpoint 1,0,These objects are on RuinsNoTrigger
+Rose,Seaside Hill,Checkpoint 1,0,
 Rose,Seaside Hill,First Cliff Before Big Ruin Beach At Checkpoint 1,10,the Triplespring has 10 rings inside
 Rose,Seaside Hill,Second Cliff Before Big Ruin Beach After Checkpoint 1,6,These rings are in the air you need Ring Dash FlightStack jump or Bellyflop to obtain them
 Rose,Seaside Hill,Lower Cliff Before Big Ruin Beach After Checkpoint 1,20,
@@ -42,7 +44,7 @@ Rose,Seaside Hill,Big Ruin Beach Rising Ruin After Checkpoint 1,0,
 Rose,Seaside Hill,Big Ruin Beach Island 2 After Checkpoint 1,9,
 Rose,Seaside Hill,Big Ruin Beach Island 2 Ruins After Checkpoint 1,0,This HintRing And cannon here should only spawn when you have RuinsNoTrigger
 Rose,Seaside Hill,Big Ruin Beach Island 2 Breakable Blocks,15,Breakthings Needed
-Rose,Seaside Hill,Big Ruin Beach Island 2s Offshore Balloon,0,This Balloon is far offshore you need ((Jump OR BellyFlopChain) AND ((Ruinplatforms AND Power cannon AND +1 team member) OR Thundershoot) to get it safely Otherwise (Jump AND (Tornado Hover OR FlyAny OR SoloPowerCannon) can be used sacrificially The user must be confident in their FlyDepleteBoost skills to make it back without access to thundershoot 
+Rose,Seaside Hill,Big Ruin Beach Island 2 Offshore Balloon,0,This Balloon is far offshore you need ((Jump OR BellyFlopChain) AND ((Ruinplatforms AND Power cannon AND +1 team member) OR Thundershoot) to get it safely Otherwise (Jump AND (Tornado Hover OR FlyAny OR SoloPowerCannon) can be used sacrificially The user must be confident in their FlyDepleteBoost skills to make it back without access to thundershoot 
 Rose,Seaside Hill,Big Ruin Beach Middle Path Bottom After Checkpoint 1,5,
 Rose,Seaside Hill,Bonus Key 2,0,
 Rose,Seaside Hill,Big Ruin Beach Middle Path Ruin Before Checkpoint 1,0,The 5 ring box needs BreakThings
